@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_glass"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvWallpaperTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/wallpaper_dialog_title"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvWallpaperSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="18dp"
+        android:text="@string/wallpaper_dialog_subtitle"
+        android:textColor="@color/text_tertiary"
+        android:textSize="12.5sp" />
+
+    <TextView
+        android:id="@+id/btnThemeCharcoal"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/bg_dialog_item"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:text="@string/wallpaper_theme_charcoal"
+        android:textColor="@color/selector_dialog_item_text"
+        android:textSize="14.5sp" />
+
+    <TextView
+        android:id="@+id/btnThemeOled"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_dialog_item"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:text="@string/wallpaper_theme_oled"
+        android:textColor="@color/selector_dialog_item_text"
+        android:textSize="14.5sp" />
+
+    <TextView
+        android:id="@+id/btnThemeCustomUrl"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_dialog_item"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:text="@string/wallpaper_theme_custom_url"
+        android:textColor="@color/selector_dialog_item_text"
+        android:textSize="14.5sp" />
+
+</LinearLayout>

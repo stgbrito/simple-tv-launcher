@@ -1,0 +1,122 @@
+[
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "com.appletv.launcher.app-debug-35:/layout_activity_main.xml.flat",
+        "source": "com.appletv.launcher.app-main-37:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\layout_dialog_app_options.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\layout\\dialog_app_options.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\drawable_bg_dialog_glass.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\drawable\\bg_dialog_glass.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\drawable_bg_watch_next_focus_border.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\drawable\\bg_watch_next_focus_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\layout_dialog_custom_wallpaper_url.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\layout\\dialog_custom_wallpaper_url.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\layout_item_grid_app.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\layout\\item_grid_app.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\color_selector_dialog_item_text.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\color\\selector_dialog_item_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\drawable_app_banner.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\drawable\\app_banner.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\drawable_bg_card_focus_border.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\drawable\\bg_card_focus_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\layout_item_dialog_app_row.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\layout\\item_dialog_app_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\drawable_bg_watch_next_glass.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\drawable\\bg_watch_next_glass.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\drawable_bg_hero_badge.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\drawable\\bg_hero_badge.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\layout_item_dock_app.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\layout\\item_dock_app.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\drawable_progress_watch_next.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\drawable\\progress_watch_next.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\layout_dialog_app_list.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\layout\\dialog_app_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\layout_dialog_wallpaper_settings.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\layout\\dialog_wallpaper_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\drawable_bg_card_glass.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\drawable\\bg_card_glass.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\drawable_ic_settings_gear.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\drawable\\ic_settings_gear.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\drawable_bg_floating_dock.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\drawable\\bg_floating_dock.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\drawable_bg_status_button.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\drawable\\bg_status_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\drawable_bg_top_header_scrim.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\drawable\\bg_top_header_scrim.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\drawable_bg_dialog_item.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\drawable\\bg_dialog_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\drawable_ic_tv_input.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\drawable\\ic_tv_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\layout_dialog_launcher_settings.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\layout\\dialog_launcher_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\drawable_bg_edittext_glass.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\drawable\\bg_edittext_glass.xml"
+    },
+    {
+        "merged": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-debug-35:\\layout_item_watch_next.xml.flat",
+        "source": "C:\\Users\\santi\\.gradle\\daemon\\8.9\\com.appletv.launcher.app-main-37:\\layout\\item_watch_next.xml"
+    }
+]

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hero_bg_deep"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <!-- Full-screen lightweight ambient radial tint on #0B0B0E base -->
+    <com.appletv.launcher.HeroAmbientView
+        android:id="@+id/heroAmbientView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Dedicated 80dp Top Sticky Header with Top-Down Dark Scrim Gradient -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topStickyBar"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@drawable/bg_top_header_scrim"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:elevation="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Compact Top-Left Header shown when App Grid is expanded (Grid Mode) -->
+        <LinearLayout
+            android:id="@+id/gridTopHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="32dp"
+            android:alpha="0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/statusCluster"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvGridModeBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_hero_badge"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.12"
+                android:paddingHorizontal="11dp"
+                android:paddingVertical="4dp"
+                android:text="@string/section_grid_badge"
+                android:textColor="#CCFFFFFF"
+                android:textSize="10.5sp" />
+
+            <TextView
+                android:id="@+id/tvGridModeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-light"
+                android:maxLines="1"
+                android:shadowColor="#80000000"
+                android:shadowDx="0"
+                android:shadowDy="3"
+                android:shadowRadius="8"
+                android:text="@string/hero_default_title"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Top-Right Status Cluster: Inputs Button, Settings Button, Clock (HH:mm) -->
+        <LinearLayout
+            android:id="@+id/statusCluster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="56dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- Minimal Inputs Icon Button -->
+            <LinearLayout
+                android:id="@+id/btnInputs"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:background="@drawable/bg_status_button"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:nextFocusLeft="@id/btnInputs"
+                android:nextFocusRight="@id/btnSettings"
+                android:nextFocusUp="@id/btnInputs"
+                android:orientation="horizontal"
+                android:paddingHorizontal="14dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:contentDescription="@string/btn_inputs"
+                    android:src="@drawable/ic_tv_input" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/btn_inputs"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <!-- Minimal Settings Icon Button -->
+            <LinearLayout
+                android:id="@+id/btnSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_status_button"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:nextFocusLeft="@id/btnInputs"
+                android:nextFocusRight="@id/btnSettings"
+                android:nextFocusUp="@id/btnSettings"
+                android:orientation="horizontal"
+                android:paddingHorizontal="14dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:contentDescription="@string/btn_settings"
+                    android:src="@drawable/ic_settings_gear" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/btn_settings"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <!-- Clean Minimal Clock (HH:mm) -->
+            <TextClock
+                android:id="@+id/textClock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:fontFamily="sans-serif-medium"
+                android:format12Hour="HH:mm"
+                android:format24Hour="HH:mm"
+                android:letterSpacing="0.03"
+                android:textColor="#E6FFFFFF"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Collapsible Top Hero + Floating Glass Dock Stage (glides up -340dp when entering App Grid) -->
+    <LinearLayout
+        android:id="@+id/topHeroAndDockContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:elevation="12dp"
+        android:orientation="vertical"
+        android:paddingTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Top Hero Stage (Left-aligned tvOS Typography + Subtle Category Pill) -->
+        <LinearLayout
+            android:id="@+id/heroStageContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="340dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvHeroBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_hero_badge"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.12"
+                android:paddingHorizontal="11dp"
+                android:paddingVertical="3.5dp"
+                android:text="@string/section_dock_badge"
+                android:textColor="#CCFFFFFF"
+                android:textSize="10.5sp" />
+
+            <TextView
+                android:id="@+id/tvHeroTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-light"
+                android:letterSpacing="-0.01"
+                android:maxLines="1"
+                android:shadowColor="#80000000"
+                android:shadowDx="0"
+                android:shadowDy="4"
+                android:shadowRadius="12"
+                android:text="@string/hero_default_title"
+                android:textColor="@color/white"
+                android:textSize="44sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvHeroSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif"
+                android:maxLines="1"
+                android:text="@string/hero_default_subtitle"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Floating Glass Dock Container (#1AFFFFFF pill) -->
+        <FrameLayout
+            android:id="@+id/dockGlassContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_floating_dock"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:elevation="8dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvDock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:focusable="false"
+                android:overScrollMode="never" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!-- All Apps Grid Section Container: strictly constrained below topStickyBar (80dp) -->
+    <LinearLayout
+        android:id="@+id/gridSectionContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topStickyBar">
+
+        <!-- Optional Apple TV "Up Next" (Continue Watching) Top Shelf (default: GONE) -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvContinueWatching"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:focusable="false"
+            android:overScrollMode="never"
+            android:paddingHorizontal="56dp"
+            android:visibility="gone" />
+
+        <!-- All Apps Section Header (visible in Dock Mode, collapses smoothly in Grid Mode) -->
+        <TextView
+            android:id="@+id/tvGridHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.04"
+            android:text="@string/label_all_apps"
+            android:textColor="#99FFFFFF"
+            android:textSize="14sp" />
+
+        <!-- All Apps Smooth Grid (3 Full Rows Visible Unobstructed in Stage 3) -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAppGrid"
+            android:layout_width="match_parent"
+            android:layout_height="460dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:focusable="false"
+            android:overScrollMode="never"
+            android:paddingHorizontal="52dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="44dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
